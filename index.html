@@ -16,6 +16,10 @@
       var canvasEl = document.getElementById("game-canvas");
       var ctx = canvasEl.getContext("2d");
       var b = new Tetris.Board(ctx);
+      var c = b.cells[9][10];
+      c.color = "#ff0000";
+      debugger
+      c.render(ctx);
       // b.initializeCells();
       // var game = new Tetris.Game();
       // var gameView = new Asteroids.GameView(game, ctx);
