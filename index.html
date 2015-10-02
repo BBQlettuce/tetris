@@ -26,6 +26,8 @@
       var ctx = canvasEl.getContext("2d");
       // var b = new Tetris.Board(ctx);
       var game = new Tetris.Game(ctx);
+      game.restartGame();
+      game.run();
       // var block = new Tetris.Block(b, [[0,0], [0,1]], "#FF0000");
       // block.display();
       // var c = b.cells[9][10];
