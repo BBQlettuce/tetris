@@ -5,6 +5,9 @@
     <title>JavascriptTetris</title>
   </head>
   <body>
+    <audio src="./Slamtris.mp3" autoplay loop controls>
+
+    </audio>
     <canvas id="game-canvas" width="800" height="800"></canvas>
     <script src="./lib/underscore.js"></script>
     <script src="./lib/jquery-2.1.4.min.js"></script>
@@ -24,20 +27,11 @@
     <script>
       var canvasEl = document.getElementById("game-canvas");
       var ctx = canvasEl.getContext("2d");
-      // var b = new Tetris.Board(ctx);
       var game = new Tetris.Game(ctx);
       game.restartGame();
       game.run();
-      // var block = new Tetris.Block(b, [[0,0], [0,1]], "#FF0000");
-      // block.display();
-      // var c = b.cells[9][10];
-      // c.color = "#ff0000";
-      // debugger
-      // c.render(ctx);
 
-      // var game = new Tetris.Game();
-      // var gameView = new Asteroids.GameView(game, ctx);
-      // gameView.start();
+
    </script>
   </body>
 </html>
