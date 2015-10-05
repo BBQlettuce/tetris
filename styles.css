@@ -1,0 +1,58 @@
+html, body, h1, ul, li, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  text-align: inherit;
+  font: inherit;
+  background: transparent;
+  color: inherit;
+  box-sizing: inherit;
+  color: inherit;
+}
+
+body {
+  /*background: #111111;*/
+  font-family: sans-serif;
+  color: crimson;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  display: block;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 24;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+.instructions {
+  width: 400px;
+  margin: 0 auto;
+  font-size: 18px;
+  display: block;
+}
+
+.instructions:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.instructions .left {
+  float: left;
+  text-align: left;
+}
+
+.instructions .right {
+  float: right;
+  text-align: left;
+}
