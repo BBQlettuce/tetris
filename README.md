@@ -1,5 +1,7 @@
 # tetris
-browser-based game built with Javascript and HTML canvas
+Browser-based game built with Javascript and HTML canvas.
+
+Live: http://oscarliu.info/tetris
 
 ## todo
 - [x] board
