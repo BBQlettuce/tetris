@@ -9,21 +9,37 @@
 
     <h1>COME ON AND SLAMTRIS</h1>
     <canvas id="game-canvas"></canvas>
-    <div class="instructions">
-      <h2>Instructions</h2>
-        <ul class="left">
-          <li>A - Move Left</li>
-          <li>S - Move Down</li>
-          <li>D - Move Right</li>
-          <li>W - SLAM!</li>
-        </ul>
-        <ul class="right">
-          <li>Space - Start/Restart Game</li>
-          <li>J/K - Rotate Left/Right</li>
-          <li>E - Store Block</li>
-          <li>P - Pause</li>
-        </ul>
+    <h2>Controls</h2>
+    <div class="switch-controls">Switch to Classic Controls!</div>
+    <div class="controls simple">
+      <ul class="left">
+        <li>&#8592 Left</li>
+        <li>&#8595 Down</li>
+        <li>&#8594 Right</li>
+        <li>Space - SLAM!</li>
+      </ul>
+      <ul class="right">
+        <li>&#8593 Rotate (use Classic controls for <br>
+          omnidirectional rotation!)</li>
+        <li>Shift - Store/Swap Block</li>
+        <li>P - Pause</li>
+      </ul>
     </div>
+    <div class="controls classic">
+      <ul class="left">
+        <li>A - Move Left</li>
+        <li>S - Move Down</li>
+        <li>D - Move Right</li>
+        <li>W - SLAM!</li>
+      </ul>
+      <ul class="right">
+        <li>Space - Start/Restart Game</li>
+        <li>J/K - Rotate Left/Right</li>
+        <li>E - Store/Swap Block</li>
+        <li>P - Pause</li>
+      </ul>
+    </div>
+
 
     <audio src="./Slamtris.mp3" autoplay loop controls></audio>
     <script src="./lib/underscore.js"></script>

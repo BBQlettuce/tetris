@@ -21,38 +21,43 @@ body {
 
 h1 {
   display: block;
-  font-size: 40px;
+  font-size: 36px;
   margin: 0 auto;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
+  padding: 3px 0;
 }
 
 ul {
   list-style: none;
 }
 
-.instructions {
+.controls {
   width: 400px;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
 }
 
-.instructions:after {
+.controls:after {
   content: "";
   clear: both;
   display: block;
 }
 
-.instructions .left {
+.controls .left {
   float: left;
   text-align: left;
 }
 
-.instructions .right {
+.controls .right {
   float: right;
   text-align: left;
+}
+
+.classic {
+  display: none;
 }
