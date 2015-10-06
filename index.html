@@ -10,7 +10,7 @@
     <h1>COME ON AND SLAMTRIS</h1>
     <canvas id="game-canvas"></canvas>
     <h2>Controls</h2>
-    <div class="switch-controls">Switch to Classic Controls!</div>
+    <div class="switch-controls" data-classic="false">Switch to Classic Controls!</div>
     <div class="controls simple">
       <ul class="left">
         <li>&#8592 Left</li>
@@ -66,10 +66,12 @@
       ctx.canvas.width = $(window).width();
       ctx.canvas.height = $(window).height() * .7;
       var game = new Tetris.Game(ctx);
+      game.bindKeys();
       game.restartGame();
       game.run();
 
-
+      // controls switch
+      // $(".switch-controls")
    </script>
   </body>
 </html>
