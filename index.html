@@ -10,8 +10,9 @@
     <h1>COME ON AND SLAMTRIS</h1>
     <canvas id="game-canvas"></canvas>
     <h2>Controls</h2>
-    <div class="switch-controls" data-classic="false">Switch to Classic Controls!</div>
-    <div class="controls simple">
+    <div class="switch classic active">Switch to Classic Controls!</div>
+    <div class="switch simple">Switch to Simple Controls!</div>
+    <div class="controls simple active">
       <ul class="left">
         <li>&#8592 Left</li>
         <li>&#8595 Down</li>
@@ -70,8 +71,23 @@
       game.restartGame();
       game.run();
 
+      var swapControlDisplay = function() {
+        $(".simple").toggleClass("active");
+        $(".classic").toggleClass("active");
+        // $(".controls .simple").toggleClass("active");
+        // $(".controls .classic").toggleClass("active");
+      };
       // controls switch
-      // $(".switch-controls")
+      $(".switch.classic").click(function(e) {
+        e.preventDefault();
+        game.bindKeys("classic");
+        swapControlDisplay();
+      });
+      $(".switch.simple").click(function(e) {
+        e.preventDefault();
+        game.bindKeys("simple");
+        swapControlDisplay();
+      });
    </script>
   </body>
 </html>

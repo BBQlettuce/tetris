@@ -13,7 +13,7 @@ html, body, h1, h2, ul, li, p {
 
 body {
   background: #202020;
-  font-family: sans-serif;
+  font-family: "lucida sans";
   color: crimson;
   text-align: center;
   width: 100%;
@@ -39,7 +39,7 @@ ul {
   width: 400px;
   margin: 0 auto;
   font-size: 16px;
-  display: block;
+  display: none;
 }
 
 .controls:after {
@@ -58,6 +58,21 @@ ul {
   text-align: left;
 }
 
-.classic {
+.controls.active{
+  display: block;
+}
+
+.switch {
+  font-size: 12px;
+  width: 180px;
   display: none;
+  background: #333333;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.switch.active {
+  display: block;
 }
