@@ -8,6 +8,6 @@ browser-based game built with Javascript and HTML canvas
   - [x] basic blocks
   - [x] block inheritance
 - [x] game
-- [ ] score view
-- [ ] next block view
-- [ ] block saving
+- [x] score view
+- [x] next block view
+- [x] block saving
