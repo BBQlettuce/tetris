@@ -44,7 +44,7 @@
         </div>
       </div>
 
-      <canvas id="game-canvas" width="400" height="480"></canvas>
+      <canvas id="game-canvas" width="400" height="450"></canvas>
 
       <div class="content-right">
         <div class="leaderboard">
@@ -84,12 +84,17 @@
     <script src="./lib/game.js"></script>
     <script src="./lib/tempBlockView.js"></script>
     <script src="./lib/scoreView.js"></script>
-
+    <script src="./lib/timerView.js"></script>
 
     <script>
       var canvasEl = document.getElementById("game-canvas");
       var ctx = canvasEl.getContext("2d");
       var game = new Tetris.Game(ctx);
+      $(".timer").timer({
+        seconds: 0,
+        format: "%M:%S"
+      })
+      $(".timer").timer('pause');
       game.bindKeys("simple");
       game.restartGame();
       game.run();
@@ -109,6 +114,9 @@
         game.bindKeys("simple");
         swapControlDisplay();
       });
+
+
+      // var timerView = new Tetris.TimerView()
    </script>
   </body>
 </html>
