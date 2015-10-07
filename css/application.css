@@ -103,11 +103,11 @@ ul {
   display: block;
 }
 
-.timer-controls .display {
+.timer-and-submit .display {
   display: none;
 }
 
-.timer-controls .display.active {
+.timer-and-submit .display.active {
   display: block;
 }
 
