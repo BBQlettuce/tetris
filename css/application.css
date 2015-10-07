@@ -1,8 +1,9 @@
-html, body, h1, h2, ul, li, p {
+html, body, h1, h2, ul, li, p, canvas {
   margin: 0;
   border: 0;
   padding: 0;
   outline: 0;
+  text-decoration: inherit;
   text-align: inherit;
   font: inherit;
   background: transparent;
@@ -19,15 +20,18 @@ body {
   width: 100%;
 }
 
+canvas {
+  float: left;
+}
+
 h1 {
   display: block;
   font-size: 36px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 h2 {
   font-size: 20px;
-  font-weight: normal;
   padding: 3px 0;
 }
 
@@ -35,28 +39,38 @@ ul {
   list-style: none;
 }
 
+.content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.content-left {
+  float: left;
+  width: 200px;
+}
+
+.content-left ul {
+  text-align: left;
+}
+
+.content-right {
+  width: 200px;
+  float: right;
+}
+
 .controls {
   width: 400px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 14px;
   display: none;
 }
 
-.controls:after {
+.group:after {
   content: "";
   clear: both;
   display: block;
 }
 
-.controls .left {
-  float: left;
-  text-align: left;
-}
-
-.controls .right {
-  float: right;
-  text-align: left;
-}
 
 .controls.active{
   display: block;
