@@ -47,8 +47,8 @@
       <canvas id="game-canvas" width="400" height="450"></canvas>
 
       <div class="content-right">
+        <h2>Hall of Fame</h2>
         <div class="leaderboard">
-          <h2>Hall of Fame</h2>
         </div>
       </div>
 
@@ -84,7 +84,9 @@
     <script src="./lib/game.js"></script>
     <script src="./lib/tempBlockView.js"></script>
     <script src="./lib/scoreView.js"></script>
-    <script src="./lib/timerView.js"></script>
+    <script src="./lib/leadersView.js"></script>
+
+    </script>
 
     <script>
       var canvasEl = document.getElementById("game-canvas");
@@ -115,7 +117,8 @@
         swapControlDisplay();
       });
 
-
+      var leaderEl = $(".leaderboard");
+      var leaderboard = new Tetris.LeadersView(leaderEl);
       // var timerView = new Tetris.TimerView()
    </script>
   </body>

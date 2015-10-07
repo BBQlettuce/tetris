@@ -86,11 +86,12 @@ ul {
   font-size: 12px;
   width: 180px;
   display: none;
-  background: #333333;
+  background: orangered;
   cursor: pointer;
   padding: 3px;
   border-radius: 3px;
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
+  color: black;
 }
 
 .switch.active {
