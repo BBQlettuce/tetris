@@ -33,6 +33,7 @@ h1 {
 h2 {
   font-size: 20px;
   padding: 3px 0;
+  margin: 10px 0;
 }
 
 ul {
@@ -47,6 +48,11 @@ ul {
 .content-left {
   float: left;
   width: 200px;
+}
+
+.content-left p {
+  font-size: 14px;
+  text-align: left;
 }
 
 .content-left ul {
@@ -89,4 +95,17 @@ ul {
 
 .switch.active {
   display: block;
+}
+
+.timer-controls .display {
+  display: none;
+}
+
+.timer-controls .display.active {
+  display: block;
+}
+
+.timer {
+  width: 800px;
+  margin: 0 auto;
 }

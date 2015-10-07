@@ -9,8 +9,11 @@
     <h1>COME ON AND SLAMTRIS</h1>
     <div class="content group">
       <div class="content-left">
-
-
+        <h2>Welcome to the Jam</h2>
+        <p>
+          Slam down 40 rows as fast as you can. <br>
+          Can you make it to the hall of fame?
+        </p>
         <h2>Controls</h2>
         <div class="switch classic active">Switch to Classic Controls!</div>
         <div class="switch simple">Switch to Simple Controls!</div>
@@ -41,7 +44,7 @@
         </div>
       </div>
 
-      <canvas id="game-canvas"></canvas>
+      <canvas id="game-canvas" width="400" height="480"></canvas>
 
       <div class="content-right">
         <div class="leaderboard">
@@ -51,10 +54,22 @@
 
     </div>
 
-    <audio src="./Slamtris.mp3" autoplay loop controls></audio>
+    <div class="timer-controls">
+      <div class="display start active">
+        <h2>HIT ENTER TO START JAMMING</h2>
+      </div>
+      <div class="display unpause">
+        <h2>GAME PAUSED<br>P to unpause or ENTER to start new game</h2>
+      </div>
+      <div class="timer">
+
+      </div>
+    </div>
+    <!-- <audio src="./Slamtris.mp3" autoplay loop controls></audio> -->
 
     <script src="./lib/underscore.js"></script>
     <script src="./lib/jquery-2.1.4.min.js"></script>
+    <script src="./lib/timer.jquery.js"></script>
     <script src="./lib/utils.js"></script>
     <script src="./lib/cell.js"></script>
     <script src="./lib/board.js"></script>
@@ -74,8 +89,6 @@
     <script>
       var canvasEl = document.getElementById("game-canvas");
       var ctx = canvasEl.getContext("2d");
-      ctx.canvas.width = 400;
-      ctx.canvas.height = 600;
       var game = new Tetris.Game(ctx);
       game.bindKeys("simple");
       game.restartGame();
