@@ -64,6 +64,11 @@ ul {
   float: right;
 }
 
+.content-right .leaderboard {
+  text-align: left;
+  line-height: 1.3;
+}
+
 .controls {
   width: 400px;
   margin: 0 auto;
@@ -90,7 +95,7 @@ ul {
   cursor: pointer;
   padding: 3px;
   border-radius: 3px;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 5px a;
   color: black;
 }
 
