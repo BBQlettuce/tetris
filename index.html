@@ -132,7 +132,7 @@
         var timestring = $(".timer").html();
         var data = { name: name, time: time, timestring: timestring };
         leaderboard.submitNew(data);
-        $(".display").show();
+        $(".display").removeAttr("style");
         game.restartGame();
       });
    </script>
