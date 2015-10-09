@@ -1,4 +1,4 @@
-html, body, h1, h2, ul, li, p, canvas {
+html, body, h1, h2, ul, li, p, input, canvas {
   margin: 0;
   border: 0;
   padding: 0;
@@ -109,6 +109,29 @@ ul {
 
 .timer-and-submit .display.active {
   display: block;
+}
+
+.timer-and-submit .submit-time {
+  display: none;
+}
+
+.timer-and-submit .submit-time.active {
+  display: block;
+}
+
+input.name {
+  border: 1px solid #aaa;
+  padding: 2px;
+  background: transparent;
+  border-radius: 3px;
+}
+
+input.submit {
+  font-size: 12px;
+  background: orangered;
+  color: black;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 .timer {
