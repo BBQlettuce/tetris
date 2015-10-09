@@ -112,12 +112,14 @@
       // controls switch
       $(".switch.classic").click(function(e) {
         e.preventDefault();
-        game.bindKeys("classic");
+        game.simpleControls = false;
+        game.bindKeys();
         swapControlDisplay();
       });
       $(".switch.simple").click(function(e) {
         e.preventDefault();
-        game.bindKeys("simple");
+        game.simpleControls = true;
+        game.bindKeys();
         swapControlDisplay();
       });
 
@@ -126,13 +128,14 @@
       leaderboard.getLeaders();
 
       // binding events to score submit
-      $(".submit").one("click", function() {
+      $(".submit").on("click", function() {
         var name = $(".name").val();
         var time = $(".timer").data('seconds');
         var timestring = $(".timer").html();
         var data = { name: name, time: time, timestring: timestring };
         leaderboard.submitNew(data);
         $(".display").removeAttr("style");
+        game.bindKeys();
         game.restartGame();
       });
    </script>
