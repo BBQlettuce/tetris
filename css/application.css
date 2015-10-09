@@ -111,14 +111,6 @@ ul {
   display: block;
 }
 
-.timer-and-submit .submit-time {
-  display: none;
-}
-
-.timer-and-submit .submit-time.active {
-  display: block;
-}
-
 input.name {
   border: 1px solid #aaa;
   padding: 2px;

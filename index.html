@@ -55,7 +55,7 @@
     </div>
 
     <div class="timer-and-submit">
-      <div class="submit-time active">
+      <div class="submit-time">
         <input class="name" type="text" placeholder="Your name?">
         <input class="submit" type="submit" value="Submit Time">
       </div>
@@ -132,6 +132,7 @@
         var timestring = $(".timer").html();
         var data = { name: name, time: time, timestring: timestring };
         leaderboard.submitNew(data);
+        $(".display").show();
         game.restartGame();
       });
    </script>
