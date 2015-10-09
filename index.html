@@ -124,7 +124,16 @@
       var leaderEl = $(".leaderboard");
       var leaderboard = new Tetris.LeadersView(leaderEl);
       leaderboard.getLeaders();
-      // var timerView = new Tetris.TimerView()
+
+      // binding events to score submit
+      $(".submit").one("click", function() {
+        var name = $(".name").val();
+        var time = $(".timer").data('seconds');
+        var timestring = $(".timer").html();
+        var data = { name: name, time: time, timestring: timestring };
+        leaderboard.submitNew(data);
+        game.restartGame();
+      });
    </script>
   </body>
 </html>

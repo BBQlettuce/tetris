@@ -132,9 +132,10 @@ input.submit {
   color: black;
   border-radius: 3px;
   padding: 3px;
+  cursor: pointer;
 }
 
 .timer {
   width: 800px;
-  margin: 0 auto;
+  margin: 5px auto;
 }
