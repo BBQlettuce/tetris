@@ -58,6 +58,7 @@
       <div class="submit-time">
         <input class="name" type="text" placeholder="Your name?">
         <input class="submit" type="submit" value="Submit Time">
+        <input class="nosubmit" type="submit" value="Cancel">
       </div>
       <div class="display pause active">
         <h2>P to pause or ENTER to restart</h2>
@@ -138,6 +139,12 @@
         game.bindKeys();
         game.restartGame();
       });
+
+      $(".nosubmit").on("click", function() {
+        $(".display").removeAttr("style");
+        game.bindKeys();
+        game.restartGame();
+      })
    </script>
   </body>
 </html>
