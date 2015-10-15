@@ -122,21 +122,13 @@ input.name {
   border-radius: 3px;
 }
 
-input.submit, input.nosubmit {
+input.submit {
   font-size: 12px;
+  background: orangered;
+  color: black;
   border-radius: 3px;
   padding: 3px;
   cursor: pointer;
-}
-
-input.submit {
-  background: orangered;
-  color: black;
-}
-
-input.nosubmit {
-  background: #444444;
-  color: #999999;
 }
 
 .timer {
