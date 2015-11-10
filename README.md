@@ -47,7 +47,7 @@ redrawn to keep calls to the canvas at a minimum.
 
 ### more gameplay
 - [x] timer, runs while game is in progress, paused when game paused
-- [x] win condition at 40 rows; lose if top out
+- [x] win condition at 20 rows; lose if top out
 - [x] leaderboard tracks best times
 
 ### extras
