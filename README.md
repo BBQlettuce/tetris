@@ -51,8 +51,8 @@ redrawn to keep calls to the canvas at a minimum.
 - [x] leaderboard tracks best times
 
 ### extras
-- [ ] ghost block
-- [ ] better randomization so less frustration (probably add into utils)
-- [ ] user interface:
-  - [ ] make instructions pop up more, force people to pick a set of controls
-  - [ ] make score submitting more visually engaging
+- [x] ghost block
+- [x] better randomization through block buckets
+- [x] user interface:
+  - [x] make instructions pop up more, force people to pick a set of controls
+  - [x] make score submitting more visually engaging
