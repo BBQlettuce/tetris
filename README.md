@@ -2,7 +2,7 @@
 Browser-based game built with Javascript and HTML canvas.
 Goal: Slam down 20 rows as fast as you can.
 
-Live: http://oscarliu.info/tetris
+Live: http://bbqlettuce.github.io/tetris
 
 ## Advanced Features
 * All gameplay rendered in HTML Canvas, with only the moving piece getting
